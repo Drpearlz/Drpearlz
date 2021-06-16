@@ -14,3 +14,8 @@ button{
 button:focus{
     outline: none;
 }
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
