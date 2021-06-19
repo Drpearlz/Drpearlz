@@ -106,11 +106,11 @@ public class TTT {
 
     // Change player marks back and forth.
     public void changePlayer() {
-        if (currentPlayerMark == 'x') {
-            currentPlayerMark = 'o';
+        if (currentPlayerMark == 'X') {
+            currentPlayerMark = 'O';
         }
         else {
-            currentPlayerMark = 'x';
+            currentPlayerMark = 'X';
         }
     }
 

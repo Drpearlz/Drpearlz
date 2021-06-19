@@ -2,7 +2,6 @@ import java.util.*;
 
 public class GuessingGame {
 
-
     public static void main(String[] args)
     {
         String playAgain = "";
@@ -55,3 +54,4 @@ public class GuessingGame {
         System.out.println("Congratulations, You guessed the number!");
     }
 }
+/* played in class. 2 guesses and you lose your turn.*/

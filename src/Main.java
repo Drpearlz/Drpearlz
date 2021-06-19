@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Current board layout:");
             game.printBoard();
             game.changePlayer();
-            System.out.println(Character.toUpperCase(game.getCurrentPlayerMark()) + " Wins!");
+            System.out.println(Character.toUpperCase(game.getCurrentPlayerMark()) + " has Won!");
         }
     }
 }
