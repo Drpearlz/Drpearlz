@@ -6,6 +6,7 @@
     box-sizing: border-box;
     text-decoration: none;
     transition: all .2s linear;
+    scroll-behavior: smooth;
 
 }
 
@@ -81,7 +82,23 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
+@media (max-width:400px) {
+    header {
+        width: 100vw;
+    }
+    .heading {
+        margin: 0 3rem;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+    .services {
+        width: 100%;
+    }
+    .contact .row form {
+        margin: 3rem 0;
+    }
+}
 @media screen and (max-width: 600px) {
 
     .topnav a:not(:first-child),
@@ -93,14 +110,53 @@
         float: right;
         display: block;
     }
-}
-
-@media screen and (max-width: 600px) {
     .topnav.responsive {
         position: relative;
     }
+    .cardContainer {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .education .box-container .box {
+        width: 100%;
+    }
+    .contact .row {
+        margin: 3rem 0;
+    }
 }
 
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 50%;
+    }
+}
+@media (max-width:991px) {
+    header {
+        left: -120%;
+    }
+    #menu {
+        display: block;
+    }
+    header.toggle {
+        left: 0%;
+    }
+    body {
+        padding: 0;
+    }
+}
+
+@media (max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+    .home {
+        padding: 1rem 4rem;
+    }
+}
 .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -209,7 +265,7 @@ border-radius: 5rem;
 .h1{
     text-align: center;
     font-size: 3rem ;
-    font-size: 5rem;
+    font: 32px;
     color: rgb(58, 37, 37);
     justify-content: center;
     flex-flow: column;
@@ -229,11 +285,13 @@ border-radius: 5rem;
     margin-inline-end: 0px;
     font-weight: bold;
     font-size: 1em;
+    padding: 8px;
 }
 .card {
-    color: white;
+    color: rgb(105, 54, 54);
     box-shadow: 0 4px 8px 0 rgba(38 62 146 / 34%);
     width: calc(33% - 20px);
+    background-color: darkgoldenrod;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -242,11 +300,11 @@ border-radius: 5rem;
     border-radius: 6px;
     margin: 0px 0px 32px;
     margin-bottom: 32px;
-    background-origin: padding-box;
+    
 
 }
 
-.card:hover {
+.card :hover {
     background-color: rgb(35, 105, 44);
     box-shadow: cornflowerblue;
     transition: all .5s;
@@ -256,9 +314,10 @@ border-radius: 5rem;
     font-size: 18px;
 }
 
-section {
+.section {
     min-height: 100vh;
     padding: 1rem;
+    display: block;
 }
 
 .contact .user img {
@@ -283,42 +342,6 @@ section {
         clear: both;
       }
 /* */
-@media screen and (max-width: 600px) {
-    .cardContainer {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .card {
-        width: 100%;
-    }
-    .education .box-container .box {
-        width: 100%;
-    }
-    .contact .row {
-        margin: 3rem 0;
-    }
-}
-@media (max-width:400px) {
-    header {
-        width: 100vw;
-    }
-    .heading {
-        margin: 0 3rem;
-    }
-    .about .row .counter .box {
-        width: 100%;
-    }
-    .education .box-container .box {
-        width: 100%;
-    }
-    .services {
-        width: 100%;
-    }
-    .contact .row form {
-        margin: 3rem 0;
-    }
-}
 
 .contact{
  box-sizing: border-box;   
@@ -327,9 +350,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    font-size: 40px;
-    font-family: Ubuntu, sans-serif;
+    flex-wrap: wrap; 
 }
 .contact .row .content {
     flex: 1 1 30rem;
