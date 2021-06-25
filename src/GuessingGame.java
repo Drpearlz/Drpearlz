@@ -26,32 +26,28 @@ public class GuessingGame {
 
         System.out.println("Enter a number between 1 and 10 as your first guess: ");
         guess = input.nextInt();
+        for (int i =0; i <2; i++) {
+            System.out.print("Enter a number between 1 and 10 as your guess: ");
 
-        do
-        {
-            if (guess < 1 || guess > 10)
-            {
-                System.out.println("That is not a valid entry. Please try again: ");
-                guess = input.nextInt();
+            do {
+                if (guess < 1 || guess > 10) {
+                    System.out.println("That is not a valid entry. Please try again: ");
+                    guess = input.nextInt();
+                } else if (guess > answer) {
+                    System.out.println("Too high, Try Again: ");
+                    guess = input.nextInt();
+                } else if (guess < answer) {
+                    System.out.println("Too low, Try Again: ");
+                    guess = input.nextInt();
+                }
+                input.nextLine();
+
             }
-            else
-            if (guess > answer)
-            {
-                System.out.println("Too high, Try Again: ");
-                guess = input.nextInt();
-            }
-            else
-            if (guess < answer)
-            {
-                System.out.println("Too low, Try Again: ");
-                guess = input.nextInt();
-            }
-            input.nextLine();
+
+            while (guess < 3);
 
         }
-        while (guess != answer);
-
-        System.out.println("Congratulations, You guessed the number!");
     }
 }
 /* played in class. 2 guesses and you lose your turn.*/
+/*modified, so after 3 guesses, you'd start all over again, if all wrong.*/
