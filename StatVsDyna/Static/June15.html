@@ -5,70 +5,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Say hi to Peggy</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
    </head>
 <body>
-  <header>
-      <img src="" alt="Peggys' logo"/>
-     <nav class="navbar">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    </header>  
-    <div class="parent">
-        <div class="child">
-            <div>
-                <div class="header"></div>
-                <div class="subheader"></div>
-                <div class="description"></div>
+ <header>
+      <div class="navbar">
+          <div class="logo"><a href="#">Peggy R<span>oxy.</span></a></div>
+          <a class="active" href="#home">Home <i class="fa fa-fw fa-home"></i></a>
+          <a href="/StatVsDyna/Static/about.html">About <i class="fas fa-user-circle"></i></a>
+          <a href="#education">Education <i class="fa fa-fw fa-university"></i></a>
+          <a href="JPage.html">Portfolio <i class="fas fa-award"></i></a>
+          <a href="#contact">Contact  <i class="fas fa-user-edit"></i></a>
+      </div>
+ </header>
+    <div class="content">
+    <h1>PEGGY ROXY</h1>
+    <hr>
+
+
+    <h2>Her Portfolio</h2>
+    <p> See what Peggy has been up to over the years.</p>
+
+    <br>
+
+<br>
+
+<section class="contact" id="section-container-contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content inline-photo show-on-scroll">
+            <div class="column left">
+                <div class="text">Please Contact</div>
+                <p>You can reach out to me on <a href="mailto:proxy18002@alumni.focuscollege.com">proxy18002@alumni.focuscollege.com</a> or fill out this form. 
+                    I will get back to you as soon as possible.</p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Pardeep Rathore</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">Address</div>
+                            <div class="sub-title">Lower Mainland, BC. Canada</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title"><a href="mailto:proxy18002@alumni.focuscollege.com">proxy18002@alumni.focuscollege.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form action="POST" data-netlify="true">
+                    <div class="fields">
+                        <div class="field name">
+                            <input type="text" name="name" placeholder="Name" required>                
+                        </div>
+                        <div class="field email">
+                            <input type="email" name="email" placeholder="Email" required>                
+                        </div>
+                    </div>
+                    <div class="field subject">
+                        <input type="text" name="subject" placeholder="Subject" required>                
+                    </div>
+                    <div class="field textarea">
+                        <textarea id="" cols="30" rows="10" type="text" name="decription" placeholder="Decribe Project..."></textarea>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Send Message</button>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="header"></div>
-        <div class="subheader"></div>
-        <div class="description"></div>
-        </div>
     </div>
-                <div class="header"></div>
-                <div class="subheader"></div>
-                <div class="description"></div>
-            </div>
-        </div>
-    </div>
-  <div class="first-class">
-    <h1 style="color:rgb(168, 35, 146);">Meet Peggy, an aspiring Software Engineer</h1>
-    <img src="/StatVsDyna/Images/peg3.jpg" style="max-width:100%;height: auto;">
-    <p>This is Peggy's First Demo</p>
-</div>
+</section>
 
-<div class="Education">
-    <h2>Her Education</h2>
-    <p>Peggy is an Alumni of Simon Fraser University. She has a degree in Health Sciences, 
-        a diploma in Health and fitness studies, and a knack for all things tech!</p>
-</div>
 
-<div class="Contact-her">
-    <a href="mailto:pegsco@yahoo.co.uk">Contact Peggy</a> 
-</div>
+
+<script src="app.js"></script>
 </body>
+<footer>
+        <!--beginning of responsive cards-->
+        <section class="about" id="about">
+            <div class="max-width">
+                <div class="parent">
+                    <h2 class="title">About Peggy</h2>
+                    <div class="child">
+                        <div class="card">
+                            <div class="subheader">
+                                <i class="fas fa-mobile"></i><h1>Hobbies</h1>
+                            </div>
+                            <div class="description">
+                                <p>Peggy is a Software engineer Peggy is an Alumni of Simon Fraser University. She has a
+                                    degree in Health Sciences,
+                                    a diploma in Health and fitness studies, and a knack for all things tech!</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="subheader">
+                               <i class="fas fa-mobile"></i> <h1>Education </h1>
+                            </div>
+                            <div class="description">
+                                <p>Peggy is an Alumni of Simon Fraser University. She has a degree in Health Sciences,
+                                    a diploma in Health and fitness studies, and a knack for all things tech!</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="subheader">
+                                <h1>Skills</h1>
+                            </div>
+                            <div class="description">
+                                <div class="Contact-her">
+                                    <a href="mailto:pegsco@yahoo.co.uk">Contact Peggy</a>
+                                    <p> Get to know Peggy, an aspiring Software Engineer and proud Alumni of Focus College,
+                                        Surrey, BC. Canada.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--end of responsive card-->
+    
+</footer>
 </html>
-
-
-<style>
-    .header{
-        border: rgba(168, 134, 83, 0.856);
-        border-radius: 4pc;
-        display: flex;
-        justify-content: center;
-    }
-    .body{
-        justify-content: center;
-        background: chocolate;
-    }
-    body {background-color: rgb(241, 223, 207);}
-    h2 {color: rgb(92, 24, 218);}
-    img { border-radius: 1.5pc;}
-</style>
